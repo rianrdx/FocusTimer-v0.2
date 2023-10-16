@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app" class="flex">
+      <div id="content-timer">
+        <section id="set-timer" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+        <section id="controls-timer">
+          <button data-action="play" class="ph ph-play-circle"></button>
+          <button data-action="stop" class="ph ph-stop-circle"></button>
+          <button
+            data-action="addFiveMinutes"
+            class="ph ph-plus-circle"
+          ></button>
+          <button
+            data-action="removeFiveMinutes"
+            class="ph ph-minus-circle"
+          ></button>
+        </section>
+      </div>
+      <div id="sounds">
+        <button
+          data-action="toggleRuningMusic"
+          class="ph ph-tree grid-1 selectad"
+        />
+        <button
+          data-action="toggleRuningMusic"
+          class="ph ph-cloud-snow grid-2"
+        />
+        <button data-action="toggleRuningMusic" class="ph ph-coffee grid-3" />
+        <button data-action="toggleRuningMusic" class="ph ph-campfire grid-4" />
+      </div>
+    </div>
+  </body>
+</html>

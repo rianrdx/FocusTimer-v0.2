@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+  background-color: #ffffff;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+#set-timer {
+  font-size: 12.8rem;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  color: #323238;
+
+  margin-bottom: 4.8rem;
+}
+
+#controls-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#controls-timer button {
+  font-size: 4.8rem;
+  background-color: transparent;
+  border: 0;
+}
+
+#controls-timer button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#sounds {
+  display: grid;
+  grid:
+    "grid-1 grid-2"
+    "grid-3 grid-4";
+  gap: 3.2rem;
+}
+
+#sounds button {
+  text-align: center;
+  border-radius: 2.4rem;
+  padding: 4.8rem;
+  border: none;
+}
+
+#sounds button {
+  font-size: 4.4rem;
+  color: #323238;
+}
+#sounds button.selectad {
+  background-color: #02799d;
+  color: #ffffff;
+}
